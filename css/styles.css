@@ -8,6 +8,20 @@ body{
 .player1 input[type="text"]{
   border: 0;
   background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border:2px solid #34495e;
+  padding: 14px 10px;
+  outline: none;
+  color: black;
+  border-radius:24px;
+  transition: 0.25s;
+
+}
+.player1 input[type="text"]:focus{
+  width: 300px;
+  border-color: #27ae60;
 }
 .player2{
   float:right;
@@ -15,6 +29,19 @@ body{
 .player2 input[type="text"]{
   border: 0;
   background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border:2px solid #c0392b;
+  padding: 14px 10px;
+  outline: none;
+  color: black;
+  border-radius:24px;
+  transition: 0.25s;
+}
+.player2 input[type="text"]:focus{
+  width: 300px;
+  border-color: #27ae60;
 }
 #start-game{
   margin-left: 290px;
