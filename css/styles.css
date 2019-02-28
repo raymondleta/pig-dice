@@ -1,10 +1,21 @@
+
 body{
   background-image: linear-gradient(to right, #fab1a0 , #74b9ff);
 
 }
+
 .player1{
   float:left;
+  margin-top: 100px;
 }
+
+#pig-dice{
+  margin-top: 40px;
+  font-family: 'Shojumaru', cursive;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
 .player1 input[type="text"]{
   border: 0;
   background: none;
@@ -19,13 +30,17 @@ body{
   transition: 0.25s;
 
 }
+
 .player1 input[type="text"]:focus{
   width: 300px;
-  border-color: #27ae60;
+  border-color: #00FF00;
 }
+
 .player2{
   float:right;
+  margin-top: 100px;
 }
+
 .player2 input[type="text"]{
   border: 0;
   background: none;
@@ -39,17 +54,28 @@ body{
   border-radius:24px;
   transition: 0.25s;
 }
+
 .player2 input[type="text"]:focus{
   width: 300px;
-  border-color: #27ae60;
+  border-color: #00FF00;
 }
+
 #start-game{
-  margin-left: 290px;
+  display: block;
+  margin-left: 400px;
   margin-top: 29%;
   width: 400px;
   height:100px;
-  border-radius: 20px;
+  border-radius: 100px;
+  background: #778ca3;
+  cursor: pointer;
+
 }
+
+#start-game:hover{
+  background: #26de81
+}
+
 #pig-dice{
   text-align: center;
 }
