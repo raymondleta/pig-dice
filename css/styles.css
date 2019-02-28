@@ -7,6 +7,8 @@ body{
 .player1{
   float:left;
   margin-top: 100px;
+  font-family: 'Shojumaru', cursive;
+  font-size: 20px;
 }
 
 #pig-dice{
@@ -32,13 +34,15 @@ body{
 }
 
 .player1 input[type="text"]:focus{
-  width: 300px;
+  width: 400px;
   border-color: #00FF00;
 }
 
 .player2{
   float:right;
   margin-top: 100px;
+  font-family: 'Shojumaru', cursive;
+  font-size: 20px;
 }
 
 .player2 input[type="text"]{
@@ -56,7 +60,7 @@ body{
 }
 
 .player2 input[type="text"]:focus{
-  width: 300px;
+  width: 400px;
   border-color: #00FF00;
 }
 
@@ -69,6 +73,9 @@ body{
   border-radius: 100px;
   background: #778ca3;
   cursor: pointer;
+  font-family: 'Shojumaru', cursive;
+  font-size: 20px;
+  color: red;
 
 }
 
