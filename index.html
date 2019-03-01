@@ -11,37 +11,50 @@
 </head>
 
 <body>
-  <div class="page1">
+  <div id="page1">
     <h1 id="pig-dice">PIG DICE</h1>
     <img src="images/pig.png" alt="pig picture">
     <div class ="container">
       <div class="player1">
         Player 1:<br>
-        <input type="text" name="firstname" placeholder="Name" autocomplete="off" id="player1" value="">
+        <input type="text" placeholder="Name" autocomplete="off" id="player1">
       </div>
       <div class="player2">
         Player 2:<br>
-        <input type="text" name="firstname" placeholder="Name" autocomplete="off" id="player2" value="">
+        <input type="text" placeholder="Name" autocomplete="off" id="player2">
       </div>
-      <button id="start-game" onmousedown="sound.play()" onclick="startGame()">START GAME</button>
     </div>
+    <button id="start-game" onmousedown="sound.play()">START GAME</button>
   </div>
 
-  <div class="page2">
+  <div id="page2">
     <h1 id="pig-dice2">PIG DICE</h1>
     <img id="img2" src="images/pig.png" alt="pig picture">
     <div>
-      <p id="p1Name">place Holder</p>
+      <p id="p1Name"></p>
       <p id="p2Name">Place Holder1</p>
     </div>
     <br><br>
-    <div id="playerStats">
-      <h3>Total</h3>
-      <h3 id="score">100</h3>
-      <button id="roll">ROLL</button>
-      <h3>Current Score</h3>
-      <h3>00</h3>
+    <form class="container">
+      <div class="row">
+        <div id="playerStats" class="col-md-4">
+          <h3>Total</h3>
+          <h3 id="score">100</h3>
+          <button id="roll">ROLL</button>
+          <h3>Current Score</h3>
+          <h3>00</h3>
+        </div>
+        <div id="playerStats2" class="col-md-4">
+          <h3>Total</h3>
+          <h3 id="score">100</h3>
+          <button id="roll1">ROLL</button>
+          <h3>Current Score</h3>
+          <h3>00</h3>
+        </div>
     </div>
+    <button id="hold">HOLD</button>
+    <button id="playA">PLAY AGAIN</button>
+    </form>
   </div>
 </body>
 </html>

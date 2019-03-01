@@ -1,9 +1,11 @@
 
 body{
   background-image: linear-gradient(to right, #fab1a0 , #74b9ff);
-
 }
 
+#page2{
+  display:none;
+}
 
 .player1{
   float:left;
@@ -18,6 +20,7 @@ body{
   font-size: 70px;
   font-weight: bolder;
 }
+
 #pig-dice2{
   margin-top: 30px;
   font-family: 'Shojumaru', cursive;
@@ -74,8 +77,8 @@ body{
 
 #start-game{
   display: block;
-  margin-left: 380px;
-  margin-top: 29%;
+  margin-left: 500px;
+  margin-top: 15%;
   width: 400px;
   height:100px;
   border-radius: 100px;
@@ -84,7 +87,6 @@ body{
   font-family: 'Shojumaru', cursive;
   font-size: 20px;
   color: #B22222;
-
 }
 
 #start-game:hover{
@@ -117,6 +119,62 @@ img{
   font-size: 30px
 }
 #playerStats{
+  margin-top: 80px;
   border-style: solid;
-  border-width: 5px;
+  border-radius: 20px;
+  float: left;
+  background-color:#dfe6e9;
+  height: 300px;
+  font-family: 'Shojumaru', cursive;
+  text-align: center;
+
+}
+#playerStats2{
+  margin-top: 80px;
+  border-style: solid;
+  border-radius: 20px;
+  float: right;
+  background-color:#dfe6e9;
+  height: 300px;
+  font-family: 'Shojumaru', cursive;
+  text-align: center;
+
+}
+#roll,#roll1{
+  height: 50px;
+  width: 70px;
+  border-radius: 20px;
+  background: #55efc4;
+}
+#roll:hover{
+  background: #e17055;
+}
+#roll1:hover{
+  background: #e17055;
+}
+#playA{
+  margin-top: 50px;
+  margin-left: 450px;
+  display: block;
+  width: 200px;
+  height:50px;
+  border-radius: 100px;
+  background: #0984e3;
+  cursor: pointer;
+  font-family: 'Shojumaru', cursive;
+  font-size: 20px;
+  color: black;
+}
+#hold{
+  margin-top: 50px;
+  margin-left: 520px;
+  display: block;
+  width: 80px;
+  height:30px;
+  border-radius: 100px;
+  background: #778ca3;
+  cursor: pointer;
+  font-family: 'Shojumaru', cursive;
+  font-size: 13px;
+  color: black;
 }
