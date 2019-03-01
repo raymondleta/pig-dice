@@ -140,7 +140,7 @@ img{
   text-align: center;
 
 }
-#roll,#roll1{
+#roll,#roll2{
   height: 50px;
   width: 70px;
   border-radius: 20px;
@@ -149,7 +149,7 @@ img{
 #roll:hover{
   background: #e17055;
 }
-#roll1:hover{
+#roll2:hover{
   background: #e17055;
 }
 #playA{

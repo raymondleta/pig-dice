@@ -14,5 +14,15 @@ $(document).ready(function(){
     $("#page1").fadeOut();
     $("#page2").fadeIn();
 });
+  $("#roll").click(function(){
+    var dice  = Math.floor(Math.random() * 6 + 1);
+    $("#current-score").text(dice);
+    event.preventDefault();
+  });
+  $("#roll2").click(function(){
+    var dice2  = Math.floor(Math.random() * 6 + 1);
+    $("#current-score2").text(dice2);
+    event.preventDefault();
+  });
 
 });
