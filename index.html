@@ -11,18 +11,37 @@
 </head>
 
 <body>
-  <h1 id="pig-dice">PIG DICE</h1>
-  <img src="images/pig.png" alt="pig picture">
-  <div class ="container">
-    <div class="player1">
-      Player 1:<br>
-      <input type="text" name="firstname" placeholder="Name" autocomplete="off">
+  <div class="page1">
+    <h1 id="pig-dice">PIG DICE</h1>
+    <img src="images/pig.png" alt="pig picture">
+    <div class ="container">
+      <div class="player1">
+        Player 1:<br>
+        <input type="text" name="firstname" placeholder="Name" autocomplete="off" id="player1" value="">
+      </div>
+      <div class="player2">
+        Player 2:<br>
+        <input type="text" name="firstname" placeholder="Name" autocomplete="off" id="player2" value="">
+      </div>
+      <button id="start-game" onmousedown="sound.play()" onclick="startGame()">START GAME</button>
     </div>
-    <div class="player2">
-      Player 2:<br>
-      <input type="text" name="firstname" placeholder="Name" autocomplete="off">
+  </div>
+
+  <div class="page2">
+    <h1 id="pig-dice2">PIG DICE</h1>
+    <img id="img2" src="images/pig.png" alt="pig picture">
+    <div>
+      <p id="p1Name">place Holder</p>
+      <p id="p2Name">Place Holder1</p>
     </div>
-    <button id="start-game" onmousedown="sound.play()">START GAME</button>
+    <br><br>
+    <div id="playerStats">
+      <h3>Total</h3>
+      <h3 id="score">100</h3>
+      <button id="roll">ROLL</button>
+      <h3>Current Score</h3>
+      <h3>00</h3>
+    </div>
   </div>
 </body>
 </html>
