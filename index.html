@@ -17,14 +17,14 @@
     <div class ="container">
       <div class="player1">
         Player 1:<br>
-        <input type="text" placeholder="Name" autocomplete="off" id="player1">
+        <input type="text" placeholder="Name" autocomplete="off" id="playerOne">
       </div>
       <div class="player2">
         Player 2:<br>
-        <input type="text" placeholder="Name" autocomplete="off" id="player2">
+        <input type="text" placeholder="Name" autocomplete="off" id="playerTwo">
       </div>
     </div>
-    <button id="start-game" onmousedown="sound.play()">START GAME</button>
+    <button id="start-game" onmousedown="sound.play()" onclick="myFunction()">START GAME</button>
   </div>
 
   <div id="page2">
@@ -32,21 +32,21 @@
     <img id="img2" src="images/pig.png" alt="pig picture">
     <div>
       <p id="p1Name"></p>
-      <p id="p2Name">Place Holder1</p>
+      <p id="p2Name"></p>
     </div>
     <br><br>
     <form class="container">
       <div class="row">
         <div id="playerStats" class="col-md-4">
           <h3>Total</h3>
-          <h3 id="score">100</h3>
+          <h3 id="score"></h3>
           <button id="roll">ROLL</button>
           <h3>Current Score</h3>
           <h3>00</h3>
         </div>
         <div id="playerStats2" class="col-md-4">
           <h3>Total</h3>
-          <h3 id="score">100</h3>
+          <h3 id="score"></h3>
           <button id="roll1">ROLL</button>
           <h3>Current Score</h3>
           <h3>00</h3>
