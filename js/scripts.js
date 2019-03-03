@@ -1,28 +1,39 @@
 var sound = new Audio();
 sound.src ="music/explosion.mp3";
 
-function myFunction() {
-  var playerOne = document.getElementById("playerOne").value;
-  document.getElementById("p1Name").innerHTML = playerOne;
-  var playerTwo = document.getElementById("playerTwo").value;
-  document.getElementById("p2Name").innerHTML = playerTwo;
-};
+
+function Players(player1, player2){
+  this.player1 = player1;
+  this.player2 = player2;
+  this.dice = function(){
+    return Math.floor(Math.random() * 6 + 1);
+  }
+  // this.totalDice = this.dice()_.map(function(total){
+  //   return total++;
+  // })
+}
+
+
+
 
 $(document).ready(function(){
-  $("#start-game").click(function(){
+  $("#start-game").click(function() {
     event.preventDefault();
+    var playerOneName = $("#playerOne").val();
+    var playerTwoName = $("#playerTwo").val();
+    var newPlayers = new Players(playerOneName, playerTwoName);
+
     $("#page1").fadeOut();
     $("#page2").fadeIn();
-});
-  $("#roll").click(function(){
-    var dice  = Math.floor(Math.random() * 6 + 1);
-    $("#current-score").text(dice);
-    event.preventDefault();
-  });
-  $("#roll2").click(function(){
-    var dice2  = Math.floor(Math.random() * 6 + 1);
-    $("#current-score2").text(dice2);
-    event.preventDefault();
+    $("#p1Name").append(newPlayers.player1);
+    $("#p2Name").append(newPlayers.player2);
+    $("#roll").click(function(){
+      event.preventDefault();
+      $("#current-score").text(newPlayers.dice());
+      // alert(newPlayers.totalDice());
+
+    })
+
   });
 
 });

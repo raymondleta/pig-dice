@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" integrity="sha256-G7A4JrJjJlFqP0yamznwPjAApIKPkadeHfyIwiaa9e0=" crossorigin="anonymous"></script>
+  <script src="js/underscore-min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </head>
@@ -24,7 +26,7 @@
         <input type="text" placeholder="Name" autocomplete="off" id="playerTwo">
       </div>
     </div>
-    <button id="start-game" onmousedown="sound.play()" onclick="myFunction()">START GAME</button>
+    <button id="start-game" onmousedown="sound.play()" onclick="">START GAME</button>
   </div>
 
   <div id="page2">
@@ -46,7 +48,7 @@
         </div>
         <div id="playerStats2" class="col-md-4">
           <h3>Total</h3>
-          <h3 id="score"></h3>
+          <h3 id="score2"></h3>
           <button id="roll2">ROLL</button>
           <h3>Current Score</h3>
           <h3 id="current-score2"></h3>
