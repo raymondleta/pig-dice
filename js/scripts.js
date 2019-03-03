@@ -8,9 +8,7 @@ function Players(player1, player2){
   this.dice = function(){
     return Math.floor(Math.random() * 6 + 1);
   }
-  // this.totalDice = this.dice()_.map(function(total){
-  //   return total++;
-  // })
+
 }
 
 
@@ -22,6 +20,7 @@ $(document).ready(function(){
     var playerOneName = $("#playerOne").val();
     var playerTwoName = $("#playerTwo").val();
     var newPlayers = new Players(playerOneName, playerTwoName);
+    var total = newPlayers.dice();
 
     $("#page1").fadeOut();
     $("#page2").fadeIn();
@@ -30,7 +29,8 @@ $(document).ready(function(){
     $("#roll").click(function(){
       event.preventDefault();
       $("#current-score").text(newPlayers.dice());
-      // alert(newPlayers.totalDice());
+
+      
 
     })
 
