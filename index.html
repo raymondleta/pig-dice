@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>PIG DICE</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -17,7 +18,7 @@
   <div id="page1">
     <h1 id="pig-dice">PIG DICE</h1>
     <img src="images/pig.png" alt="pig picture">
-    <div class ="container">
+    <div class="container">
       <div class="player1">
         Player 1:<br>
         <input type="text" placeholder="Name" autocomplete="off" id="playerOne">
@@ -44,7 +45,9 @@
           <h3>Total</h3>
           <h3 id="score"></h3>
           <button id="roll">ROLL</button>
-          <h3>Current Score</h3>
+          <h3>Round Score</h3>
+          <h3 id="round-score"></h3>
+          <h3>Roll</h3>
           <h3 id="current-score"></h3>
         </div>
         <div id="playerStats2" class="col-md-4">
@@ -54,10 +57,11 @@
           <h3>Current Score</h3>
           <h3 id="current-score2"></h3>
         </div>
-    </div>
-    <button id="hold">HOLD</button>
-    <button id="playA">PLAY AGAIN</button>
+      </div>
+      <button id="hold">HOLD</button>
+      <button id="playA">PLAY AGAIN</button>
     </form>
   </div>
 </body>
+
 </html>
