@@ -2,9 +2,8 @@ var sound = new Audio();
 sound.src ="music/explosion.mp3";
 var total = 0;
 
-function Players(player1, player2){
-  this.player1 = player1;
-  this.player2 = player2;
+function Players(player){
+  this.player = player;
   this.dice = function(){
     return Math.floor(Math.random() * 6 + 1);
   }
@@ -20,8 +19,7 @@ $(document).ready(function(){
   $("#start-game").click(function() {
     event.preventDefault();
     var playerOneName = $("#playerOne").val();
-    var playerTwoName = $("#playerTwo").val();
-    var newPlayers = new Players(playerOneName, playerTwoName);
+    var newPlayers = new Players(playerOneName);
 
 
     $("#page1").fadeOut();
@@ -37,9 +35,12 @@ $(document).ready(function(){
     $("#hold").click(function(){
       var finalTotal = newPlayers.total();
       $("#score").text(finalTotal);
+      $("#round-score").text(0);
       event.preventDefault();
 
   });
+
+  var playerT
 
 
   });
