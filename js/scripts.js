@@ -24,8 +24,7 @@ $(document).ready(function(){
 
     $("#page1").fadeOut();
     $("#page2").fadeIn();
-    $("#p1Name").append(newPlayers.player1);
-    $("#p2Name").append(newPlayers.player2);
+    $("#p1Name").append(newPlayers.player );
     $("#roll").click(function(){
       event.preventDefault();
       $("#current-score").text(newPlayers.dice());
@@ -40,7 +39,15 @@ $(document).ready(function(){
 
   });
 
-  var playerT
+  var playerTwoName =$("#playerTwo").val();
+  var newPlayers2 = new Players(playerTwoName);
+
+  $("#p2Name").append(newPlayers2.player);
+  $("#roll2").click(function(){
+    event.preventDefault();
+    $("#current-score2").text(newPlayers2.dice());
+    $("#round-score2").text(newPlayers2.total());
+  });
 
 
   });
