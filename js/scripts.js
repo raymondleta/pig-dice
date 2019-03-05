@@ -1,3 +1,5 @@
+//Business Logic
+
 var sound = new Audio();
 sound.src ="music/explosion.mp3";
 var total = 0;
@@ -14,7 +16,7 @@ function Players(player){
 
 
 
-
+//ui logic 
 $(document).ready(function(){
   $("#start-game").click(function() {
     event.preventDefault();
