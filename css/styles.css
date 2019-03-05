@@ -2,7 +2,6 @@
 body{
   background-image: linear-gradient(to right, #fab1a0 , #74b9ff);
 }
-
 #page2{
   display:none;
 }
@@ -177,4 +176,19 @@ img{
   font-family: 'Shojumaru', cursive;
   font-size: 13px;
   color: black;
+}
+@media only screen and (max-width: 500px) {
+  .#start-game{
+    margin-right: 800px;
+    display: block;
+    margin-top: 15%;
+    width: 400px;
+    height:100px;
+    border-radius: 100px;
+    background: #778ca3;
+    cursor: pointer;
+    font-family: 'Shojumaru', cursive;
+    font-size: 20px;
+    color: #B22222;
+  }
 }
